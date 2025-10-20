@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Project Satellite</title>
+</head>
+
+<body>
+  <div id="infoPanel"
+    style="position: absolute; top: 10px; left: 10px; background-color: rgba(0,0,0,0.7); color: white; padding: 10px; border-radius: 5px; display: none; max-width: 300px;">
+    <h3 id="scenarioTitle" style="margin-top: 0;"></h3>
+    <p id="scenarioDescription"></p>
+    <p>Kinetic Energy: <span id="kineticEnergyDisplay">0</span> J</p>
+    <p>Potential Energy: <span id="potentialEnergyDisplay">0</span> J</p>
+    <p>Total Energy: <span id="totalEnergyDisplay">0</span> J</p>
+  </div>
+  <canvas class="webgl"></canvas>
+  <script type="module" src="/src/script.js"></script>
+</body>
+
+</html>
