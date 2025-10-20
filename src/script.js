@@ -10,7 +10,7 @@ import gsap from 'gsap'
 const J2 = 1.08263e-3;
 let mass = 2300; // kg
 let g = 9.81; // m/s
-let Cd = 50;
+let Cd = 0.5;
 const G = 6.6743e-11; // m³/kg/s²
 const M = 5.972e24; // kg
 const μ = G * M;
