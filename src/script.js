@@ -203,14 +203,6 @@ const stars = new THREE.Points(practicalsGeometry, practicalsMaterial);
 scene.add(stars);
 stars.visible = false;
 
-// Y-axis tube
-const yAxisHeight = 800 * 100000; // 800 km in meters
-const yAxisTubeGeometry = new THREE.CylinderGeometry(10000, 10000, yAxisHeight, 32); // Small radius for visibility
-const yAxisTubeMaterial = new THREE.MeshBasicMaterial({ color: 0x00ff00 }); // Green color for Y-axis
-const yAxisTube = new THREE.Mesh(yAxisTubeGeometry, yAxisTubeMaterial);
-yAxisTube.position.set(0, R + 10 + yAxisHeight / 2, 0); // Position it at the rocket's launch position
-scene.add(yAxisTube);
-
 // EARTH
 const earthGeometry = new THREE.SphereGeometry(R, 64, 64)
 const earthMaterial = new THREE.MeshStandardMaterial({
