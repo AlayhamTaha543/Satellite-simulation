@@ -4,7 +4,8 @@
   "main": "script.js",
   "scripts": {
     "dev": "vite",
-    "build": "npx vite build"
+    "build": "npx vite build",
+    "postinstall": "chmod +x node_modules/.bin/vite"
   },
   "keywords": [],
   "author": "",
